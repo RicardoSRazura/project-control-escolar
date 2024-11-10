@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>778</width>
-    <height>483</height>
+    <height>652</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -34,7 +34,7 @@
 color: #FFFFFF</string>
    </property>
    <property name="text">
-    <string>HORARIOS</string>
+    <string>MAESTROS</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -77,10 +77,10 @@ color: #FFFFFF</string>
   <widget class="QFrame" name="frameFormHorario">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>30</x>
      <y>69</y>
-     <width>591</width>
-     <height>391</height>
+     <width>721</width>
+     <height>561</height>
     </rect>
    </property>
    <property name="cursor">
@@ -96,11 +96,11 @@ border-radius: 10px;</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="lbId">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>90</y>
+      <x>42</x>
+      <y>70</y>
       <width>49</width>
       <height>16</height>
      </rect>
@@ -125,13 +125,13 @@ border-radius: 10px;</string>
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="lbNombre">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>140</y>
-      <width>49</width>
-      <height>16</height>
+      <x>30</x>
+      <y>120</y>
+      <width>61</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -148,19 +148,19 @@ border-radius: 10px;</string>
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Turno:</string>
+     <string>Nombre:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="lbApellidoP">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>190</y>
-      <width>49</width>
-      <height>16</height>
+      <x>10</x>
+      <y>170</y>
+      <width>81</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -177,19 +177,19 @@ border-radius: 10px;</string>
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Hora:</string>
+     <string>Apellido P. :</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="lbApellidoM">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>240</y>
-      <width>49</width>
-      <height>16</height>
+      <x>10</x>
+      <y>230</y>
+      <width>81</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -206,7 +206,7 @@ border-radius: 10px;</string>
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Dia:</string>
+     <string>Apellido M. :</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -215,9 +215,9 @@ border-radius: 10px;</string>
    <widget class="QLineEdit" name="entryId">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>90</y>
-      <width>91</width>
+      <x>110</x>
+      <y>70</y>
+      <width>61</width>
       <height>21</height>
      </rect>
     </property>
@@ -226,40 +226,12 @@ border-radius: 10px;</string>
 border-radius:none;</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="cbTurno">
+   <widget class="QLabel" name="lbIdABuscar">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>140</y>
-      <width>151</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: none;</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="cbDia">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>240</y>
-      <width>151</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: none;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
+      <x>130</x>
       <y>30</y>
-      <width>151</width>
+      <width>161</width>
       <height>20</height>
      </rect>
     </property>
@@ -274,7 +246,7 @@ border-radius: none;</string>
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Ingrese codigo horario:</string>
+     <string>Ingrese codigo maestro:</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="entryBuscarId">
@@ -291,25 +263,11 @@ border-radius: none;</string>
 border-radius: none;</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="cbHora">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>190</y>
-      <width>121</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: none;</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnNuevo">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>310</y>
+      <x>100</x>
+      <y>490</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -333,8 +291,8 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnEditar">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>310</y>
+      <x>200</x>
+      <y>490</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -358,8 +316,8 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnEliminar">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>310</y>
+      <x>300</x>
+      <y>490</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -383,8 +341,8 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnGuardar">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>310</y>
+      <x>400</x>
+      <y>490</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -408,8 +366,8 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnCancelar">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>310</y>
+      <x>500</x>
+      <y>490</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -453,6 +411,303 @@ padding: 5px;</string>
     </property>
     <property name="text">
      <string>Buscar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryNombre">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>120</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: none;
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryApellidoP">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: none;
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryApellidoM">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>230</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: none;
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbGradoDeEst">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>70</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Grado de estudios:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryGradoDeEstudio">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>70</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: none;
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbCarreras">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>120</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Carreras:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMaterias">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>290</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Materias:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryCorreo">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>290</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius: none;
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbCorreo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Correo:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbCarreras">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>120</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: none;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryCarreras">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>160</y>
+      <width>171</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 0;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbMaterias">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>290</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: none;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryMaterias">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>330</y>
+      <width>171</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 0;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAnadirCarreras">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>110</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #E2F1E7;
+border: 2px solid grey;
+padding: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Añadir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAnadirMateria">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>280</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #E2F1E7;
+border: 2px solid grey;
+padding: 5px;</string>
+    </property>
+    <property name="text">
+     <string>Añadir</string>
     </property>
    </widget>
   </widget>
