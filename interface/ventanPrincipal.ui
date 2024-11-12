@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventanaPrincipal</class>
+ <widget class="QMainWindow" name="ventanaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ventana Principal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionUsuarios"/>
+    <addaction name="actionAlumnos"/>
+    <addaction name="actionMaestros"/>
+    <addaction name="actionMaterias"/>
+    <addaction name="actionGrupos"/>
+    <addaction name="actionHorarios"/>
+    <addaction name="actionSalones"/>
+    <addaction name="actionCarrera"/>
+    <addaction name="actionPlaneaciones"/>
+    <addaction name="actionExit"/>
+    <addaction name="actionRegresar"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUsuarios">
+   <property name="text">
+    <string>Usuarios</string>
+   </property>
+  </action>
+  <action name="actionAlumnos">
+   <property name="text">
+    <string>Alumnos</string>
+   </property>
+  </action>
+  <action name="actionMaestros">
+   <property name="text">
+    <string>Maestros</string>
+   </property>
+  </action>
+  <action name="actionMaterias">
+   <property name="text">
+    <string>Materias</string>
+   </property>
+  </action>
+  <action name="actionGrupos">
+   <property name="text">
+    <string>Grupos</string>
+   </property>
+  </action>
+  <action name="actionHorarios">
+   <property name="text">
+    <string>Horarios</string>
+   </property>
+  </action>
+  <action name="actionSalones">
+   <property name="text">
+    <string>Salones</string>
+   </property>
+  </action>
+  <action name="actionCarrera">
+   <property name="text">
+    <string>Carrera</string>
+   </property>
+  </action>
+  <action name="actionPlaneaciones">
+   <property name="text">
+    <string>Planeaciones</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionRegresar">
+   <property name="text">
+    <string>Regresar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
