@@ -7,10 +7,10 @@ class Usuario():
         self.rol = rol
 
     def getId_usuario(self):
-        return self.usuario_id
+        return self.id_usuario
     
-    def setId_usuario(self, usuario_id):
-        self.usuario_id = usuario_id
+    def setId_usuario(self, id_usuario):
+        self.id_usuario = id_usuario
 
     def getNombre(self):
         return self.nombre
@@ -24,11 +24,11 @@ class Usuario():
     def setCorreo(self, correo):
         self.correo = correo
 
-    def getContraseña(self):
-        return self.contraseña
+    def getContrasena(self):
+        return self.contrasena
     
-    def setContraseña(self, contraseña):
-        self.contraseña = contraseña
+    def setContrasena(self, contrasena):
+        self.contrasena = contrasena
 
     def getRol(self):
         return self.rol

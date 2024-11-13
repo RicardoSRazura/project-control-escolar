@@ -154,6 +154,31 @@ padding: 5px;</string>
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="lbMensaje">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>70</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(214, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>mensaje</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

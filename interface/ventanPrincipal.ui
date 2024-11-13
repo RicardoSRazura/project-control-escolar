@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Ventana Principal</string>
+   <string>Control Escolar main</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -27,72 +27,72 @@
     <property name="title">
      <string>Archivo</string>
     </property>
-    <addaction name="actionUsuarios"/>
-    <addaction name="actionAlumnos"/>
-    <addaction name="actionMaestros"/>
-    <addaction name="actionMaterias"/>
-    <addaction name="actionGrupos"/>
-    <addaction name="actionHorarios"/>
-    <addaction name="actionSalones"/>
-    <addaction name="actionCarrera"/>
-    <addaction name="actionPlaneaciones"/>
-    <addaction name="actionExit"/>
-    <addaction name="actionRegresar"/>
+    <addaction name="btnUsuarios"/>
+    <addaction name="btnAlumnos"/>
+    <addaction name="btnMaestros"/>
+    <addaction name="btnMaterias"/>
+    <addaction name="btnGrupos"/>
+    <addaction name="btnHorarios"/>
+    <addaction name="btnSalones"/>
+    <addaction name="btnCarrera"/>
+    <addaction name="btnPlaneaciones"/>
+    <addaction name="btnExit"/>
+    <addaction name="btnRegresar"/>
    </widget>
    <addaction name="menuArchivo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionUsuarios">
+  <action name="btnUsuarios">
    <property name="text">
     <string>Usuarios</string>
    </property>
   </action>
-  <action name="actionAlumnos">
+  <action name="btnAlumnos">
    <property name="text">
     <string>Alumnos</string>
    </property>
   </action>
-  <action name="actionMaestros">
+  <action name="btnMaestros">
    <property name="text">
     <string>Maestros</string>
    </property>
   </action>
-  <action name="actionMaterias">
+  <action name="btnMaterias">
    <property name="text">
     <string>Materias</string>
    </property>
   </action>
-  <action name="actionGrupos">
+  <action name="btnGrupos">
    <property name="text">
     <string>Grupos</string>
    </property>
   </action>
-  <action name="actionHorarios">
+  <action name="btnHorarios">
    <property name="text">
     <string>Horarios</string>
    </property>
   </action>
-  <action name="actionSalones">
+  <action name="btnSalones">
    <property name="text">
     <string>Salones</string>
    </property>
   </action>
-  <action name="actionCarrera">
+  <action name="btnCarrera">
    <property name="text">
     <string>Carrera</string>
    </property>
   </action>
-  <action name="actionPlaneaciones">
+  <action name="btnPlaneaciones">
    <property name="text">
     <string>Planeaciones</string>
    </property>
   </action>
-  <action name="actionExit">
+  <action name="btnExit">
    <property name="text">
     <string>Exit</string>
    </property>
   </action>
-  <action name="actionRegresar">
+  <action name="btnRegresar">
    <property name="text">
     <string>Regresar</string>
    </property>
