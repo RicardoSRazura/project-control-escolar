@@ -29,7 +29,7 @@ class Login():
                 self.main = MainWindow()
                 self.login.hide()
                 print(f"Este es el id del usuario logueado: {res.getNombre()}")
-                print(f"Usuario logueado con rol: {res.getRol()}")  # Imprimir el rol del usuario
+                print(f"Usuario logueado con el perfil de: {res.getPerfil()}")  # Imprimir el rol del usuario
                 print("Exito", "Login exitoso")
                 self.login.lbMensaje.setText("Login Correcto")  
             else:

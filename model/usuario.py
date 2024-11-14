@@ -1,10 +1,12 @@
 class Usuario():
-    def __init__(self, id_usuario=None, nombre="", correo="", contrasena="", rol=""):
+    def __init__(self, id_usuario=None, nombre="", apellidop="", apellidom="", correo="", contrasena="", perfil=""):
         self.id_usuario = id_usuario
         self.nombre = nombre
+        self.apellidop = apellidop
+        self.apellidom = apellidom
         self.correo = correo
         self.contrasena = contrasena
-        self.rol = rol
+        self.perfil = perfil
 
     def getId_usuario(self):
         return self.id_usuario
@@ -18,6 +20,18 @@ class Usuario():
     def setNombre(self, nombre):
         self.nombre = nombre
 
+    def getApellidop(self):
+        return self.apellidop
+    
+    def setApellidop(self, apellidop):
+        self.apellidop = apellidop
+
+    def getApellidom(self):
+        return self.apellidom
+    
+    def setApellidom(self, apellidom):
+        self.apellidom = apellidom
+
     def getCorreo(self):
         return self.correo
     
@@ -30,8 +44,8 @@ class Usuario():
     def setContrasena(self, contrasena):
         self.contrasena = contrasena
 
-    def getRol(self):
-        return self.rol
+    def getPerfil(self):
+        return self.perfil
     
-    def setRol(self, rol):
-        self.rol = rol
+    def setPerfil(self, perfil):
+        self.perfil = perfil
