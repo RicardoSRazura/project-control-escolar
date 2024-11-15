@@ -82,6 +82,9 @@ border-radius:10px</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
+    <property name="text">
+     <string>ricardo@example.com</string>
+    </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
@@ -106,6 +109,9 @@ border-radius:10px</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>ricardo123456</string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>

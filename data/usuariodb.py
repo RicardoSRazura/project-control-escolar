@@ -37,22 +37,25 @@ class UsuarioDb():
             self.datos = (usuario.getNombre(), usuario.getApellidop(), usuario.getApellidom(), usuario.getCorreo(), usuario.getContrasena(), usuario.getPerfil())
             self.cursor.execute(self.sql, self.datos)
             self.conn.commit()
+            lastId = self.cursor.lastrowid
+            self.db_con.close()
             print("Datos insertados correctamente")
-            self.con.close()
+            return lastId
         except mysql.connector.Error as err:
             print(f"Error al guardar el usuario: {err}")
-        except Exception as e:
-            print(f"Error: {e}")
+            return None
+        # except Exception as e:
+        #     print(f"Error: {e}")
     
-    def searchUser(self, usuario:Usuario):
+    def searchUser(self, id_usuario):
         try:
-            self.con = con.conexion()
-            self.conn = self.con.open()
+            self.db_con = con.conexion()
+            self.conn = self.db_con.open()
             self.cursor = self.conn.cursor(buffered=True)
             self.sql = "SELECT * FROM usuarios WHERE id_usuario = %s"
-            self.cursor.execute(self.sql, (usuario.getId_usuario,))
+            self.cursor.execute(self.sql, (id_usuario,))
             row = self.cursor.fetchone()
-            self.con.close()
+            self.db_con.close()
             if row:
                 usuario = Usuario(row[0], row[1], row[2], row[3], row[4], row[5], row[6])
                 return usuario
@@ -60,54 +63,62 @@ class UsuarioDb():
         except mysql.connector.Error as err:
             print(f"Error al buscar el usuario: {err}")
             return None
+        
     def editUser(self, usuario:Usuario):
         try:
-            self.con = con.conexion()
-            self.conn = self.con.open()
+            self.db_con = con.conexion()
+            self.conn = self.db_con.open()
             self.cursor = self.conn.cursor()
-            self.sql = "UPDATE usuarios SET nombre=%s, apellidop=%s, apellidom%s, correo=%s, contrasena=%s, perfil=%s WHERE id_usuario=%s"
+            self.sql = "UPDATE usuarios SET nombre=%s, apellidop=%s, apellidom=%s, correo=%s, contrasena=%s, perfil=%s WHERE id_usuario=%s"
             self.datos = (usuario.getNombre(), usuario.getApellidop(), usuario.getApellidom(), usuario.getCorreo(),usuario.getContrasena(), usuario.getPerfil(), usuario.getId_usuario())
             self.cursor.execute(self.sql, self.datos)
             self.conn.commit()
-            self.con.close()
+            resultado = self.cursor.rowcount > 0
+            self.db_con.close()
+            return resultado
         except mysql.connector.Error as err:
             print(f"Error al editar el usuario: {err}")
+            return None
 
-    def removUser(self, usuario:Usuario):
+    def removUser(self, id_usuario):
         try:
-            self.con = con.conexion()
-            self.conn = self.con.open()
+            self.db_con = con.conexion()
+            self.conn = self.db_con.open()
             self.cursor = self.conn.cursor()
             self.sql = "DELETE FROM usuarios WHERE id_usuario=%s"
-            self.cursor.execute(self.sql, (usuario.getId_usuario(),))
+            self.cursor.execute(self.sql, (id_usuario,))
             self.conn.commit()
-            self.con.close()
+            resultado = self.cursor.rowcount > 0
+            self.db_con.close()
+            return resultado
         except mysql.connector.Error as err:
             print(f"Error al eliminar el usuario: {err}")
+            return None
     
     def getMaxId(self):
         try: 
-            self.con = con.conexion()
-            self.conn = self.con.open()
+            self.db_con = con.conexion()
+            self.conn = self.db_con.open()
             self.cursor = self.conn.cursor()
             self.sql = "SELECT MAX(id_usuario) FROM usuarios"
             self.cursor.execute(self.sql)
             row = self.cursor.fetchone()
-            self.con.close()
+            self.db_con.close()
             return row[0] if row[0] is not None else 0
         except mysql.connector.Error as err:
             print(f"Error al obtener el maximo ID: {err}")
             return 0
+        
     
     def exists(self, usuario:Usuario):
         try:
-            self.con = con.conexion()
-            self.conn = self.con.open()
+            self.db_con = con.conexion()
+            self.conn = self.db_con.open()
             self.cursor = self.conn.cursor(buffered=True)
             self.sql = "SELECT COUNT(*) FROM usuarios WHERE correo = %s"
             self.cursor.execute(self.sql, (usuario.getCorreo(),))
             result = self.cursor.fetchone()
-            self.con.close()
+            self.db_con.close()
             return result[0] > 0
         except mysql.connector.Error as err:
             print(f"Error al verificar existencia de usuarios: {err}")

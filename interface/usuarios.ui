@@ -279,6 +279,9 @@ border-radius: none;</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
 border: 2px solid grey;
@@ -303,6 +306,9 @@ padding: 5px;</string>
       <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
@@ -329,6 +335,9 @@ padding: 5px;</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
 border: 2px solid grey;
@@ -353,6 +362,9 @@ padding: 5px;</string>
       <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
@@ -379,6 +391,9 @@ padding: 5px;</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
 border: 2px solid grey;
@@ -403,6 +418,9 @@ padding: 5px;</string>
       <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
@@ -584,10 +602,33 @@ border-radius: none;
       <height>22</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color:white;
 border-radius:none;</string>
     </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Administrador</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maestro</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Alumno</string>
+     </property>
+    </item>
    </widget>
   </widget>
  </widget>

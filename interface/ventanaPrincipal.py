@@ -6,7 +6,7 @@ from interface.usuarios import UsuariosWindow
 class MainWindow():
     def __init__(self):
         self.ventanaPrincipal = uic.loadUi("interface/ventanPrincipal.ui")
-        self.userWindow = uic.loadUi("interface/usuarios.ui")
+        self.ventanaUsuarios = UsuariosWindow()
         self.initGui()
         self.ventanaPrincipal.showMaximized()
 
@@ -14,4 +14,4 @@ class MainWindow():
         self.ventanaPrincipal.btnUsuarios.triggered.connect(self.abrirUsuarios)
 
     def abrirUsuarios(self):
-        self.userWindow.show()
+        self.ventanaUsuarios.userWindow.show()
