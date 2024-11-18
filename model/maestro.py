@@ -1,4 +1,4 @@
-class Maestros():
+class Maestro():
     def __init__(self, id_maestro=None, id_materia=None, id_usuario=None):
         self.id_maestro = id_maestro
         self.id_materia = id_materia
