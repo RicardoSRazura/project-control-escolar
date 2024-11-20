@@ -95,7 +95,7 @@ class CarrerasWindow():
         if res:
             self.carreraWindow.entryId.setText(res.getId_carrera())
             self.carreraWindow.entryNombreCarrera.setText(res.getNombre())
-            self.carreraWindow.entrySemestres.setText(res.semestres())
+            self.carreraWindow.entrySemestres.setText(res.getSemestres())
 
             print("Exito, Carrera encontrada correctamente")
         

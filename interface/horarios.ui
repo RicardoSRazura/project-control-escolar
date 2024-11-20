@@ -77,7 +77,7 @@ color: #FFFFFF</string>
   <widget class="QFrame" name="frameFormHorario">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>100</x>
      <y>69</y>
      <width>591</width>
      <height>391</height>
@@ -183,35 +183,6 @@ border-radius: 10px;</string>
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>240</y>
-      <width>49</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>10</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Dia:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="entryId">
     <property name="geometry">
      <rect>
@@ -239,20 +210,21 @@ border-radius:none;</string>
      <string notr="true">background-color: rgb(255, 255, 255);
 border-radius: none;</string>
     </property>
-   </widget>
-   <widget class="QComboBox" name="cbDia">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>240</y>
-      <width>151</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: none;</string>
-    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Matutino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vespertino</string>
+     </property>
+    </item>
    </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
@@ -291,24 +263,10 @@ border-radius: none;</string>
 border-radius: none;</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="cbHora">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>190</y>
-      <width>121</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: none;</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnNuevo">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>310</y>
       <width>81</width>
       <height>31</height>
@@ -333,7 +291,7 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnEditar">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>150</x>
       <y>310</y>
       <width>81</width>
       <height>31</height>
@@ -358,7 +316,7 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnEliminar">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>250</x>
       <y>310</y>
       <width>81</width>
       <height>31</height>
@@ -383,7 +341,7 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnGuardar">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>350</x>
       <y>310</y>
       <width>81</width>
       <height>31</height>
@@ -408,7 +366,7 @@ padding: 5px;</string>
    <widget class="QPushButton" name="btnCancelar">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>450</x>
       <y>310</y>
       <width>81</width>
       <height>31</height>
@@ -453,6 +411,20 @@ padding: 5px;</string>
     </property>
     <property name="text">
      <string>Buscar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="entryHora">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:none;</string>
     </property>
    </widget>
   </widget>
