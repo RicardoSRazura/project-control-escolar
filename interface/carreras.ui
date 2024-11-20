@@ -220,7 +220,7 @@ border-radius:none;</string>
      <string>Ingrese codigo carrera:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="entryBuscarId">
     <property name="geometry">
      <rect>
       <x>280</x>

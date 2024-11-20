@@ -42,7 +42,7 @@ class CarreraDb():
             print(f"Error al buscar la carrera: {err}")
             return None
         
-    def editUser(self, carrera:Carrera):
+    def editCarrera(self, carrera:Carrera):
         try:
             self.db_con = con.conexion()
             self.conn = self.db_con.open()
@@ -58,7 +58,7 @@ class CarreraDb():
             print(f"Error al editar la carrera: {err}")
             return None
 
-    def removUser(self, id_carrera):
+    def removCarrera(self, id_carrera):
         try:
             self.db_con = con.conexion()
             self.conn = self.db_con.open()
