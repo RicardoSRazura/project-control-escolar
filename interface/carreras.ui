@@ -250,6 +250,9 @@ border-radius: none;</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
 border: 2px solid grey;
@@ -274,6 +277,9 @@ padding: 5px;</string>
       <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
@@ -300,6 +306,9 @@ padding: 5px;</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
 border: 2px solid grey;
@@ -325,6 +334,9 @@ padding: 5px;</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;
 border: 2px solid grey;
@@ -349,6 +361,9 @@ padding: 5px;</string>
       <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #E2F1E7;

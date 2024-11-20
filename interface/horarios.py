@@ -14,7 +14,7 @@ class HorariosWindow():
         self.horarioWindow.entryId.clear()
         self.horarioWindow.cbTurno.setCurrentIndex(0)
         self.horarioWindow.entryHora.clear()
-        self.horarioWindow.cbDia.setCurrentIndex(0)
+      
 
 
     def activar(self):
